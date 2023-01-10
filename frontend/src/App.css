@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+body{
+  background-color: #080710;
+}
+
+nav{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  color: wheat;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.card-container{
+  width: 40%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282c34;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.circle{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circle:first-child{
+  background: linear-gradient(
+      #1845ad,
+      #23a2f6
+  );
+  left: -100px;
+  top: -100px;
+}
+.circle:nth-child(2){
+  background: linear-gradient(
+      to right,
+      #ff512f,
+      #f09819
+  );
+  right: -100px;
+  bottom: -100px;
+}
+
+
+form{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+
+.input-holder{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  width: 50%;
+  height: 24px;
+  margin: 6px;
+  align-self: center;
+}
+
+button{
+  width: 20%;
+  align-self: center;
+  margin-top: 20px;
+  padding: 3px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.user-actions{
+  display: flex;
+  width: 40%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.input-holder label{
+  font-size: 18px;
+  margin: 5px;
+  color: wheat;
+}
+
+.user-details{
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  margin: auto;
+}
+.user-email{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  border: 1px solid rebeccapurple;
+}
+.home{
+  display: flex;
+  height: 500px;
+  width: 60%;
+  color: wheat;
+  margin: auto;
+  justify-content: center;
+  font-size: 24px;
+  align-items: center;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
