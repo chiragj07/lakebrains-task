@@ -2,7 +2,8 @@
 
 ## install frontend dependencies
 
-cd frontend
+cd frontend \
+
 npm install
 
 ## start frontend
@@ -11,7 +12,8 @@ npm start
 
 ## install backend dependencies
 
-cd backend
+cd backend \
+
 npm install
 
 ## start backend server
